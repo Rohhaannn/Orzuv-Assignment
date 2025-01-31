@@ -1,12 +1,21 @@
 import React from 'react'
 import './App.css'
+import AddTodo from './components/AddTodo';
+import Todos from './components/Todos';
+
 
 function App() {
   
   return (
     <>
-      <div className='text-green-500 text-3xl underline font-bold'>
-        <h1> Hello World! </h1>
+      <div>
+        <h1 className='text-3xl text-white font-bold mt-10'>
+          Task Manager
+        </h1>
+      </div>
+      <div>
+        <AddTodo/>
+        <Todos/>
       </div>
     </>
   )
